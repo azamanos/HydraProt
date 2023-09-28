@@ -2,7 +2,7 @@
 
 HydraProt: A New Deep Learning Tool for Fast and Accurate Prediction of Explicit Water Positions for Protein Structures.
 
-![header ](overall_pipeline_simple.pdf)
+![header ](overall_pipeline_simple.png)
 
 Figure: Schematic representation of the deep Hydration of Protein (HydraProt) pipeline. The process starts by transforming the protein's coordinates into a 3D grid array, which is then divided into submaps. These submaps are processed by a 3D U-net for water molecule sampling. The resulting hydration submaps are reconstructed into a full grid and converted back to 3D coordinates. This procedure is reiterated twice, each time adding the newly produced 3D coordinates to the previous set. The candidate water molecule points are subsequently embedded and evaluated via a Multilayer Perceptron (MLP). The final refinement step prunes and improves the placement of predicted water molecules.
 
