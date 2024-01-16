@@ -47,7 +47,7 @@ conda env create -f ./env_hydraprot.yml
 conda activate hydraprot
 ```
 
-4\. Download from zenodo [https://doi.org/10.5281/zenodo.8386934](https://doi.org/10.5281/zenodo.8386934 ""), checkpoints of the models, the datasets used in this work, and the pdb of the presented results. Extract the files in the main directory of the project.
+4\. Download from zenodo [https://doi.org/10.5281/zenodo.10517963](https://doi.org/10.5281/zenodo.10517963 ""), checkpoints of the models, the datasets used in this work, and the pdb of the presented results. Extract the files in the main directory of the project.
 
 <a id="usage"></a>
 ## Usage
