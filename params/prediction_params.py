@@ -6,7 +6,7 @@ from utils.utils import Config
 config = Config()
 
 ## Paths ##
-config.pdb_path = 'PATH_TO_PDB'
+config.pdb_path = 'PDB_PATH'
 #Here give npy, text file, or config.pdb_path text file should have comma or next line delimeter.
 config.pdb_list_path = config.pdb_path
 

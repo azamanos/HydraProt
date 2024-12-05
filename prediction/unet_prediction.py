@@ -138,8 +138,9 @@ def unet_prediction_pass(atom_hetatm_coords, atom_hetatm_atomtype, model, unet_p
     scores : array
         array of shape (K) with the scores for the predicted water coordinates.
     '''
-    with torch.cuda.device(unet_params.device):
-        torch.cuda.empty_cache()
+    if unet_params.device[:4] == 'cuda':
+        with torch.cuda.device(unet_params.device):
+            torch.cuda.empty_cache()
     model.eval()
     with torch.no_grad():
         #Initialize matrix transformation list and refined_coords_transformed
